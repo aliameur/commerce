@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,12 +17,8 @@
     "baseUrl": ".",
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "types/*": [
-        "./types/*"
-      ]
+      "@/*": ["./src/*"],
+      "types/*": ["./types/*"]
     },
     "plugins": [
       {
@@ -43,7 +35,5 @@
     "./types/storefront.generated.d.ts",
     "./types/storefront.types.d.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

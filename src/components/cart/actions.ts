@@ -1,9 +1,10 @@
 'use server';
 
-import { TAGS } from '@/lib/constants';
-import { addToCart, createCart, getCart, removeFromCart, updateCart } from '@/lib/shopify';
 import { revalidateTag } from 'next/cache';
 import { cookies } from 'next/headers';
+
+import { TAGS } from '@/lib/constants';
+import { addToCart, createCart, getCart, removeFromCart, updateCart } from '@/lib/shopify';
 
 export async function addItem(prevState: any, selectedVariantId: string | undefined) {
   let cartId = cookies().get('cartId')?.value;

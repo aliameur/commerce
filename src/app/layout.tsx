@@ -1,7 +1,10 @@
-import Navbar from '@/components/layout/navbar';
 import { GeistSans } from 'geist/font/sans';
-import { ensureStartsWith } from '@/lib/utils';
 import { ReactNode } from 'react';
+
+import { ensureStartsWith } from '@/lib/utils';
+
+import Navbar from '@/components/layout/navbar';
+
 import './globals.css';
 
 const { TWITTER_CREATOR, TWITTER_SITE, SITE_NAME } = process.env;
